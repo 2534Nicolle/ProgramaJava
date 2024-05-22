@@ -1,0 +1,21 @@
+package lpa2;
+import java.util.Scanner;
+public class Salah {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		int Celsius,Fahrenheit;
+		
+		System.out.println("Informe o valor do Fahrenheit: ");
+		Fahrenheit= ler.nextInt();
+		
+		Celsius = ((Fahrenheit - 32)*5)/9;
+		
+		System.out.println("A temperatura convertida em celsius é: " +Celsius);
+		
+	   
+
+	}
+
+}
