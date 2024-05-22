@@ -1,0 +1,33 @@
+package lpa2;
+import java.util.Scanner;
+public class CR7 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		double valor1, valor2 ,soma,sub,mult;
+		String operacao;
+
+		System.out.println("Informe o valor 1: ");
+		valor1= ler.nextDouble();
+		System.out.println("Informe o valor 2: ");
+		valor2= ler.nextDouble();
+		
+		soma = valor1+valor2;
+		sub = valor1-valor2;
+		mult = valor1*valor2;
+		
+		System.out.println("Informe a operação desejada: ");
+		operacao= ler.next();
+		
+		if (operacao.equals ("Soma")) {
+			System.out.println("O resultado é: " + soma);
+		}
+		else if (operacao.equals ("Subtração")) {
+			System.out.println("O resultado é: " + sub);
+		}
+		else if (operacao.equals ("Multiplicação")) {
+			System.out.println("O resultado é: " + mult);
+	   }
+	}
+}
